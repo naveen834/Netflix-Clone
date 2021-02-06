@@ -11,8 +11,10 @@ export const Frame = styled.div`
 
 export const Item = styled.div`
   color: white;
+  margin: auto;
   margin-bottom: 10px;
-  max-width: 600px;
+  max-width: 700px;
+  width: 100%;
 
   &:first-of-type {
     margin-top: 3em;
