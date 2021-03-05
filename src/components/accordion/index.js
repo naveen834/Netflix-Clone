@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Body,
   Container,
@@ -7,7 +7,7 @@ import {
   Inner,
   Item,
   Title,
-} from "./styles/accordion";
+} from './styles/accordion';
 
 export default function Accordion({ children, ...restProps }) {
   return (
