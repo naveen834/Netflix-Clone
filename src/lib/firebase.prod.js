@@ -1,18 +1,18 @@
 import Firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
-
+// import { seedDatabase } from '../seed';
 // we need to somehow send the database
 
 //  we need a config here
 const config = {
-  apiKey: 'AIzaSyBZlofgl59iOFAo4_e03HbV31IueWp8Bwc',
-  authDomain: 'netflix-f4973.firebaseapp.com',
-  projectId: 'netflix-f4973',
-  storageBucket: 'netflix-f4973.appspot.com',
-  messagingSenderId: '880635559416',
-  appId: '1:880635559416:web:c9a35943780748b1deaa0d',
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECT,
+  storageBucket: process.env.REACT_APP_STORAGE,
+  messagingSenderId: process.env.REACT_APP_MESSAGE,
+  appId: process.env.REACT_APP_ID,
 };
 const firebase = Firebase.initializeApp(config);
-
+// seedDatabase(firebase);
 export { firebase };
